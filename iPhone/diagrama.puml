@@ -1,0 +1,37 @@
+@startuml
+class iPhone {
+    +String modelo
+    +String numeroSerie
+    +String sistemaOperacional
+    +ligar()
+    +desligar()
+}
+
+class NavegadorInternet {
+    +abrirPagina(String url)
+    +atualizarPagina()
+    +fecharPagina()
+    +navegarPara(String url)
+    +voltar()
+    +avancar()
+}
+
+class ReprodutorMusical {
+    +reproduzirMusica()
+    +pausarMusica()
+    +pararMusica()
+    +avancarFaixa()
+    +retrocederFaixa()
+}
+
+class AparelhoTelefonico {
+    +fazerChamada(String numero)
+    +encerrarChamada()
+    +atenderChamada()
+    +recusarChamada()
+}
+
+iPhone --> NavegadorInternet
+iPhone --> ReprodutorMusical
+iPhone --> AparelhoTelefonico
+@enduml
